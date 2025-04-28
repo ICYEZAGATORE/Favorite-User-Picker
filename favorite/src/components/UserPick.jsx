@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useEffect, useState} from "react";
 import { useFavoriteUser } from "./FavoriteUserContext";
 export default function UsePick(){
         const[loading,setLoading] =useState(true)
@@ -44,7 +44,7 @@ if(error){
 }
 return (
   <div className="">
-    <h2>Select your favorite user from this list</h2>
+    <h2>Select a class name</h2>
     <ul>
       {users.map((user) => (
         <li

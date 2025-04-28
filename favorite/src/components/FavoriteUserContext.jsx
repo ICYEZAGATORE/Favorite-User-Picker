@@ -1,7 +1,6 @@
-import React,{useState,useEffect,useContext} from "react";
+import { createContext, useContext, useState, useEffect } from "react";
+
 const FavoriteUserContext = createContext();
-
-
 
 export const useFavoriteUser = () => {
   return useContext(FavoriteUserContext);
